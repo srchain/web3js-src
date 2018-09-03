@@ -36,7 +36,7 @@ contract.events.OrderProductEvent({
 				let postData 	=  {
 						order_no				: event.returnValues.oderid,
 						to_account 			: event.returnValues.payaddr,
-						wei							: event.returnValues.value,
+						value							: event.returnValues.value,
 						pay_model				: 1, //扫码
 						pay_type				: 8, //以太币支付
 						contract_address: event.address,
